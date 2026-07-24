@@ -104,7 +104,7 @@ For every problem, I try to:
 
 ## 📬 Connect with Me
 
-- 💼 LinkedIn: *(Add your LinkedIn profile)*
+- 💼 LinkedIn: linkedin.com/in/pradeepyogi/
 - 🐙 GitHub: https://github.com/pradeeproxx22
 
 ---
