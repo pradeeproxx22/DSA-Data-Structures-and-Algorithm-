@@ -1,0 +1,29 @@
+# Number frequency Problem 
+num = int(input("Enter the nubmer"))
+freq_digit = int(input("Enter Frequency digit : "))
+count = 0
+
+ # Handling 0 frequency
+if num == 0 :
+  print("frequency of zero is = 1")
+
+# Code for robustness
+if freq_digit < 0 or freq_digit > 9:
+  print('Invalid digit ')
+
+
+else:
+  while num > 0 :
+    digit = num % 10
+    num = num //10   # Modified ->  num //= 10
+
+    # Frequency is calculated here
+    if freq_digit == digit :  # If frequency digit is greater or less 0 < 9
+         count+=1
+
+  print("Frequency count is :",count)
+
+
+
+
+
