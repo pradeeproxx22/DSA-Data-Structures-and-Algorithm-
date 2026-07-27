@@ -1,0 +1,39 @@
+""" Factorial:
+n! = n × (n-1) × (n-2) × ... × 1
+
+Strong Number:
+If the sum of the factorials of all digits of a number
+is equal to the original number, then it is called a Strong Number.
+
+ Example:
+ 145 → 1! + 4! + 5! = 1 + 24 + 120 = 145  
+"""
+
+
+num = int(input("Enter the nubmer"))
+strong_num= num
+strong_sum = 0       # Modified -> previous was sum only i wrote but didn't used that bcz sum is a built-in function.
+
+#try to seprately handle zero
+if num == 0:
+  print("Not a strong number")
+else:
+# Seprating digit and calculation factorial
+     while num > 0 :
+        digit = num %10
+        temp_fact = digit
+        multi = 1
+
+        for i in range (digit, 0, -1):
+              multi*= i           # Modified  : multi*= temp_fact i have done this which is write but not properly
+              temp_fact-=1
+
+# Sumition for strong number
+        strong_sum+= multi
+        num//= 10
+
+# Checking if its a storng number or not
+     if strong_num == strong_sum:
+        print('A strong number ')
+     else:
+        print('Not strong number ')
