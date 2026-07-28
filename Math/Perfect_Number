@@ -1,0 +1,20 @@
+""" Day 11 Perfect Number : Sum of all its proper factors (excluding itself ) = original number  """
+
+
+num= int(input("Enter a number :"))
+factor_sum = 0
+
+if num == 0 or num == 1 :
+  print("Not Perfect Number")
+else:
+
+  for i in range(1,num):
+    if num % i == 0 :
+      factor_sum+= i
+
+  if num == factor_sum :
+     print("Perfect Number")
+  else:
+     print("Not Perfect Number")
+
+
