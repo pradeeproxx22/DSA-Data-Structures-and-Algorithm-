@@ -1,0 +1,35 @@
+# Automorphic Number: The square of the number ends with the same number.
+num= int(input("Enter a number :"))
+orig_num =num 
+count=1
+
+# Calculate square
+square=num*num
+
+# Using while loop to count digit and convert them into power of 10 
+while num > 0:
+ # store_result=num%10
+  # counting in multiple of 10 
+  count*=10
+  num//=10 
+
+  # More Cleaner code 
+  """
+  while num > 0: 
+    count*=10
+    num//=10  
+   """
+
+# Show automorphic number
+store_result = square% count
+
+if orig_num == store_result:
+  print("Automorphic Number")
+else:
+  print("Not automorphic Number")
+
+
+
+#"""Crux is that you have to find  the digits and Original_num and find create multiple of them in 10^power  """
+
+
