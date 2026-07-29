@@ -1,0 +1,29 @@
+# Harshad/"Niven" Number : The number is Divisible by the sum of its digits. Example : 18 --> 1+8= 9 , 18%9 == 0 
+
+num= int(input("Enter a number :"))
+orig_num =  num
+digit_sum =0 
+
+# O is special case because 0 is mathematically  divides its sum and in 0/0 = cannot defined
+if num == 0 :  
+   print("Harshad/ Niven Number")
+else:   
+
+# Loop to seprate number 
+
+  while num > 0 :
+      nxt_digit = num % 10 
+  # Summition of seprate digits 
+      digit_sum+=nxt_digit
+      num//= 10 
+
+
+# if-else check 
+  if orig_num % digit_sum == 0 :
+      print("Harshad/ Niven Number")
+  else:
+      print("Not Harshad/Niven Number")
+
+
+
+  
