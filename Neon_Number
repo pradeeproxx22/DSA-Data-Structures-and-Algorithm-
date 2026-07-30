@@ -1,0 +1,16 @@
+# Neon Number: The sum of the digits of its square is equal to the original number. 
+num= int(input("Enter a number :"))
+
+digit_sum =0
+square = num*num 
+  
+while square > 0 :
+    nxt_digit=square%10    # sepratation of digits one by one
+    digit_sum+= nxt_digit  # Addition of digits
+    square//= 10 
+
+if num ==  digit_sum: 
+    print('Neon Number')
+else:
+    print('Not a neon Number')
+
