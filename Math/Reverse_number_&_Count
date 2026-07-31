@@ -1,0 +1,12 @@
+num = int(input("Enter a number to reverse :"))
+rev = 0
+i=0
+while num > 0 :
+  i+=1
+  nxtdigit = num % 10
+  num//=10
+# i understand the mathematical calculation behind it so isko solve krna phir jyda easy hua better than before
+  rev= rev * 10 + nxtdigit
+
+print(rev)
+print("Number of digits is: ",i)
