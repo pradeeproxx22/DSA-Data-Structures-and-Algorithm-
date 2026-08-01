@@ -1,0 +1,19 @@
+# LCM : Least Common Multiple ex: 12,8 --> common multiple = 24 
+num1 = int(input("Enter number1 :"))
+num2 = int(input("Enter number2 :"))
+
+if num1>num2:
+  larger=num1
+else:
+  larger=num2
+
+# Using while instead of using for because for loop conditon never stop for i in range(larger: no condition to stop ) 
+while larger>0:
+   if larger % num1 == 0 and larger % num2 == 0 :
+      lcm_num = larger
+      break
+   else:
+      larger+= 1
+
+  
+print("LCM is : ",lcm_num)
