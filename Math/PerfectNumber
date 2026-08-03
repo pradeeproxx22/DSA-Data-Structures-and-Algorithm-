@@ -1,0 +1,13 @@
+# A perfect number is square of it's integer
+num = int(input("Enter a number :"))
+squar=0
+
+# Here is the crux you have to store the multiplication of a number in square and then compare
+for i in range(1,num+1):
+  squar = i*i
+  if num < squar or num == squar:
+      break
+if num == squar:
+  print('Perfect Square')
+else:
+  print('Not Perfect Square')
