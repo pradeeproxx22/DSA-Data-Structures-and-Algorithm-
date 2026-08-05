@@ -1,0 +1,17 @@
+# Spy number is whose product = sum called spy number for example 123 it's product =6 and sum = 6
+
+num =int(input("Enter a number :"))
+sum = 0
+prodct = 1
+if num == 0:          #  Exception handling here
+  print("spy number")
+else:
+  while num > 0:
+      nxt_digit = num % 10
+      sum+= nxt_digit
+      prodct*=nxt_digit
+      num//= 10
+  if sum == prodct :
+       print("Spy Number ")
+  else:
+       print("Not spy number ")
