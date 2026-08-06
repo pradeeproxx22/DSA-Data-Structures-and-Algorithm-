@@ -1,0 +1,24 @@
+# find even and odd number count in the number
+num= int(input('Enter a number '))
+count=0
+even_count=0
+odd_count=0
+rev = 0
+sum=0
+while num > 0:
+
+  nxtdigit=num%10
+  count+=1        # Change from above line to below line
+  num=num//10
+  sum+=nxtdigit
+  if nxtdigit%2==0:  # Inside  the loop body rakho isko
+      even_count+=1
+  else:
+      odd_count+=1
+
+
+
+print("Total Digit : ",count)
+print("even_digits : ",even_count)
+print("Odd_digits  : ",odd_count)
+print("Sum is : ",sum )
