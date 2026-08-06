@@ -1,0 +1,13 @@
+# Duck number: A Duck Number is a number that contains at least one zero: 0, but the num must NOT  start with 0 .
+num =int(input("Enter a number :"))
+
+while num > 0 :
+  nxt_digit = num % 10 
+  if nxt_digit == 0 or num == 0 :
+    break
+  num //= 10 
+
+if nxt_digit == 0:
+  print("Duck number")
+else:
+  print("Not Duck number")
