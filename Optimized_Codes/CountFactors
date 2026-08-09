@@ -1,0 +1,17 @@
+#Count the factors (sqrt{36}),(sqrt{25}
+import math 
+num = int(input("Enter a number to find it's factor: "))
+count = 0 
+for i in range(1,int(math.sqrt(num))+1):
+  if num % i == 0: 
+    couple_digit = num//i # Here we find the couple  of single factors like 36 = 6*6 counts = 1
+    print(i)              #  Used to see the factors
+
+    if i == couple_digit:
+      count+= 1
+    else:
+      count+=2
+     
+
+print("Number of Factore is: ",count)
+
