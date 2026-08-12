@@ -1,0 +1,30 @@
+# Perfect Number Optimization : sum of factores is equal = num is perfect number
+import math
+
+num  = int(input("Enter a number"))
+if num <=1:
+  print("Not perfect ")
+else:
+  sum_digit = 0
+  partner = 0
+
+  for i in range(1, int(math.sqrt(num))+1):  # Adding +1 alter code
+      if num % i == 0 :
+          partner = num//i
+   #  print("num is :",num, " i is:",i)
+
+          if num == partner or partner == i:
+               sum_digit+= i
+          else:
+               sum_digit+= partner+i
+               #sum_digit+= i
+          if sum_digit > num:
+             print("early exit")
+             break
+
+  if sum_digit == num:
+      print("Perfect Number")
+      print(sum_digit)
+  else:
+      print("Not Perfect Number")
+
