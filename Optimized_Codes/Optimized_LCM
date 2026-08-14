@@ -1,0 +1,17 @@
+#  Day23 LCM_Optimisation
+num1 = int(input("Enter 1st number: "))
+num2 = int(input("Enter 2nd number: "))
+
+# Save original number to orignum1, 2 to calculate GCD 
+orignum1 = num1
+orignum2 = num2
+remain = 1 
+
+while remain > 0:
+   remain = num1 % num2
+   num1 = num2 
+   num2 = remain 
+print("GCD is : ",num1)
+lcm_is = (orignum1 * orignum2) // num1 
+print("LCM of:",orignum1,"nd ",orignum2,"=",lcm_is)
+
