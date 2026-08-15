@@ -1,0 +1,33 @@
+# Prime number optimization Code with using factors and "Factors always comes in pairs "
+num = int(input("Enter number "))
+
+if num > 1:   
+  primefound =True    # chor mila mtlb true 
+  for i in range (2,int(num ** 0.5)+1):
+    if num % i == 0: # Factor found not Prime = False 
+      primefound = False
+      break
+
+  if primefound:
+      print("Prime")
+  else:
+      print("Not Prime")
+else:
+    print("Not Prime")
+
+
+
+# Prime number optimization  without Using isfound boolean function
+
+num = int(input("Enter number "))
+
+if num > 1:   
+   for i in range (2,int(num ** 0.5)+1):
+    if num % i == 0: # Factor found not Prime = False 
+      print("Not Prime")
+      break
+
+   else:
+      print("Prime")
+else:
+      print("Not Prime")
