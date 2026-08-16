@@ -1,0 +1,13 @@
+# Fibonacci Number concept :  Next number  = Sum of two previous numbers 
+
+num = int(input("Enter number to see fibonacci series:  "))
+
+a = 0 
+b = 1 
+
+for i in range (0,num+1 ):
+  print(a)
+  nxt_num = a+b
+  a = b
+  b = nxt_num
+  
