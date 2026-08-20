@@ -1,0 +1,16 @@
+#Day27 count digit  number code
+orig_num = int(input("Enter number "))
+count = 0
+
+# Handling exception of -ve number
+num = abs(orig_num)   
+# Handling exception of 0 
+if num == 0 :
+  count+= 1
+
+while num > 0 :       
+    count+= 1   
+    num//= 10
+    
+
+print("Count of digits: ",count)
