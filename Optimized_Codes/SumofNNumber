@@ -1,0 +1,4 @@
+# Day 28 Sum of n Natural numbers using formula: n(n+1)/2  1,2,3,4,5 = 1+5, 2+4, 3 = every pair comes in (n+1) pair  that's why we divide them by 2
+num = int(input("Enter number "))
+sum = num* (num+1)//2
+print(sum )
