@@ -7,7 +7,6 @@
 - ✅ Build strong problem-solving skills
 - ✅ Practice DSA daily
 - ✅ Improve coding logic
-- ✅ Prepare for Software Engineering interviews
 - ✅ Maintain consistency
 
 
@@ -19,7 +18,7 @@
 
 <div align="center">
 
-### ⭐ If you like this repository, don't forget to Star it!
+### ⭐ If you like this repository, just follow me 
 
 **Happy Coding ❤️**
 
