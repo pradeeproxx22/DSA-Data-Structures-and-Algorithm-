@@ -1,0 +1,9 @@
+# Basic code of Power of Number  
+base  = int(input("Enter Base :"))
+power = int(input("Enter power :"))
+result = 1 
+
+for i in range(0,power):
+  result = result * base
+
+print("result is: ",result )
