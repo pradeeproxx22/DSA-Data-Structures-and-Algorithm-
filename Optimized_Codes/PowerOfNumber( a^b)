@@ -1,3 +1,13 @@
+# Optimized power of Number code from O(n) ---> O(log n) 
+
+
+
+
+
+
+
+
+
 # Basic code of Power of Number  
 base  = int(input("Enter Base :"))
 power = int(input("Enter power :"))
@@ -7,3 +17,5 @@ for i in range(0,power):
   result = result * base
 
 print("result is: ",result )
+
+
