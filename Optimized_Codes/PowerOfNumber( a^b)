@@ -1,5 +1,18 @@
 # Optimized power of Number code from O(n) ---> O(log n) 
 
+# Optimized power of number code
+base  = int(input("Enter Base :"))
+power = int(input("Enter power :"))
+result = 1
+
+while power > 0:
+  # If power is odd then store it into result then deal with even power normally : CRUX of the code
+  if power % 2 == 1 :
+     result = result * base
+  base = base * base
+  power = power // 2 
+
+print("Result :",result)
 
 
 
@@ -9,6 +22,8 @@
 
 
 # Basic code of Power of Number  
+
+
 base  = int(input("Enter Base :"))
 power = int(input("Enter power :"))
 result = 1
