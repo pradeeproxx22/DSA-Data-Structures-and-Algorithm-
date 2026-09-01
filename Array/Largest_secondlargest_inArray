@@ -1,0 +1,21 @@
+n = int(input("How many elements =  "))
+
+arr = []
+for i in range(0,n):
+    value = int(input(" : "))
+    arr.append(value)
+
+largest = arr[0]
+second = arr [1]
+
+for i in range(2,n):
+    
+    if  arr[i] > largest : # current is bigger than largest
+        second = largest   # second = old largest ko 
+        largest = arr[i]   # largest m daal do current ko 
+    elif arr[i] > second:
+            second = arr[i]        
+
+        
+
+print("Largest",largest,"2nd largest: ",second)
