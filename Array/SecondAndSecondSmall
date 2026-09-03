@@ -1,0 +1,41 @@
+""" Find second smallest element in an array and seoncond_smallest element .  """
+"""✅ Day 32 verdict
+
+Logic: ✅
+Initialization: ✅
+Single traversal: ✅
+Duplicate handling: ✅ according to your definition
+Negative numbers: ✅
+TC: ✅ O(n)
+SC: ✅ O(1)
+
+"""
+
+
+
+n = int(input("how many elements:"))
+arr = []
+
+for i in range (0, n):
+    value = int(input())
+    arr.append(value)
+
+print(arr)
+
+smallest = arr[0]
+scnd_smallest = arr[1]
+if smallest > scnd_smallest :
+   smallest,scnd_smallest = arr[1],arr[0]
+for i in range(2,n):
+    
+
+    if arr[i] < smallest :
+        scnd_smallest =  smallest            
+        smallest = arr[i]
+
+    elif scnd_smallest > arr[i]:
+        scnd_smallest = arr[i]
+
+   
+
+print("smallest: ",smallest,"Second_smallest: ",scnd_smallest )
