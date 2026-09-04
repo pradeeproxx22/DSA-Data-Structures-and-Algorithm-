@@ -1,0 +1,48 @@
+# Count Occurences of and element 
+
+n = int(input("How many elements: "))
+
+arr = []
+count = 0 
+
+for i in range (0,n):
+    value = int(input(" "))
+    arr.append(value)
+
+print(arr)
+targetnum = int(input("Enter target element :"))
+
+
+for i in range (0, n ):
+    if targetnum == arr[i]:
+        count+= 1 
+
+
+print(targetnum," Occurs:",count ,"times")
+
+"""
+
+
+# Greater Element count problem additional problem 
+
+n = int(input("How many elements: "))
+
+arr = []
+count = 0 
+
+for i in range (0,n):
+    value = int(input(" "))
+    arr.append(value)
+
+print(arr)
+targetnum = int(input("find greater number count  of entered element:"))
+
+
+for i in range (0, n ):
+    if arr[i] > targetnum:
+        count+= 1 
+
+
+print("greater than target number: ",count)
+
+"""
