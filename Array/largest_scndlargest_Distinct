@@ -1,0 +1,30 @@
+# Find the larget and second largest element but not distinct element 
+
+n = int(input("Element enter :"))
+arr = []
+
+for i in range(0,n):
+    value = int(input(": "))
+    arr.append(value)
+
+
+largest = arr[0]
+scnd_largest = arr[1]
+
+
+if scnd_largest > largest :
+    largest, scnd_largest = arr[1],arr[0]
+
+
+for i in range(2, n):
+    if arr[i] > largest:
+         scnd_largest = largest
+         largest = arr[i]
+    elif  scnd_largest < arr[i] and arr[i] != largest : 
+         scnd_largest = arr[i]
+    
+
+
+print("Larget :",largest ,"second_Largest: ", scnd_largest)
+
+
