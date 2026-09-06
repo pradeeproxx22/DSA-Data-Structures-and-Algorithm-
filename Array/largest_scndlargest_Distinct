@@ -8,12 +8,12 @@ for i in range(0,n):
     arr.append(value)
 
 
-largest = arr[0]
-scnd_largest = arr[1]
-
-
-if scnd_largest > largest :
-    largest, scnd_largest = arr[1],arr[0]
+largest = arr[0] 
+scnd_largest = None
+        
+if scnd_largest is None :  # This line means : i don't find any valid value of second_largest element 
+   largest == arr[i] 
+      
 
 
 for i in range(2, n):
