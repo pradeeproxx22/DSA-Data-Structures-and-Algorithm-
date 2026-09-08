@@ -11,16 +11,22 @@ for i in range(0,n):
 largest = arr[0] 
 scnd_largest = None
         
-if scnd_largest is None :  # This line means : i don't find any valid value of second_largest element 
-   largest == arr[i] 
-      
 
-
-for i in range(2, n):
+for i in range(1, n):
     if arr[i] > largest:
          scnd_largest = largest
-         largest = arr[i]
-    elif  scnd_largest < arr[i] and arr[i] != largest : 
+         largest = arr[i]       #Largest update
+
+    elif  arr[i] == largest : 
+         print(arr)
+         pass
+
+    elif scnd_largest is None:
+         #first distinct candidate
+         scnd_largest = arr[i]
+
+
+    elif arr[i] > scnd_largest : 
          scnd_largest = arr[i]
     
 
