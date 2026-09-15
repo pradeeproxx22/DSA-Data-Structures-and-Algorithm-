@@ -1,0 +1,28 @@
+# This program is to find duplicate in the array and their count . 
+
+n = int(input("Enter element :"))
+arr = []
+
+
+for i in range(0, n):
+    value = int(input("> "))
+    arr.append(value)
+
+chckhogaye = []
+
+for i in range (0, n): 
+    count = 1
+    if arr[i] in chckhogaye :
+       continue
+    
+    for j in range(i+1,n):   # Inner loop 
+        if arr[i] == arr[j] :  #  
+            count+= 1
+            
+        chckhogaye.append(arr[i])   
+    print("Element: ",arr[i]," count: ",count)    
+    
+       
+
+    
+    
